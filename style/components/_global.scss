@@ -13,7 +13,7 @@ ul {
 }
 
 // Start Global classes
-.font-family {
+.font-poppins {
   font-family: nth($font-family, 1);
 }
 .text-gray {
@@ -64,7 +64,6 @@ ul {
   background: $bg-gradient-peach;
 }
 
-//Text style classes
 .text-center {
   text-align: center;
 }
@@ -94,11 +93,11 @@ ul {
 // Button classes
 .btn {
   border: none;
-  color: transparent;
+  background-color: transparent;
   cursor: pointer;
 }
 .btn-primary {
-  padding: 8rem 2rem;
+  padding: 0.8rem 2rem;
   border-radius: 50px;
   font-family: nth($font-family, 1);
 

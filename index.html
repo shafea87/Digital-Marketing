@@ -5,14 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Marketing</title>
-
+    <!-- Bootstrap icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+      integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./dm.css" />
   </head>
   <body>
     <!-- Start Header -->
     <header class="container-fluid">
-      <h1>Hello</h1>
+      <nav id="nav" class="flex font-poppins">
+        <div class="nav-brand">
+          <a href="#" class="text-dark text-lg font-bold">Digital</a>
+        </div>
+
+        <div class="nav-toggle toggle-btn">
+          <button class="btn nav-toggle__btn">
+            <i class="bi bi-filter-right"></i>
+          </button>
+        </div>
+
+        <div class="nav-collapse collapse flex-grow">
+          <ul class="nav-collapse__menu flex">
+            <li class="nav-menu__item"><a href="#" class="link"></a>Home</li>
+            <li class="nav-menu__item"><a href="#" class="link"></a>About</li>
+            <li class="nav-menu__item">
+              <a href="#" class="link"></a>Services
+            </li>
+            <li class="nav-menu__item"><a href="#" class="link"></a>Work</li>
+            <li class="nav-menu__item"><a href="#" class="link"></a>Contact</li>
+          </ul>
+        </div>
+        <div class="flex-initial nav-likns">
+          <ul class="flex nav-likns__list">
+            <button
+              class="nav-links__list__btn btn btn-primary bg-gradient text-white text-uppercase btn-shadow"
+            >
+              Start a project
+            </button>
+          </ul>
+        </div>
+      </nav>
     </header>
     <!-- End Header -->
 

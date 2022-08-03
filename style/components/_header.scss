@@ -1,5 +1,39 @@
-.container-fluid {
-  h1 {
-    color: $text-dark;
-  }
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 24px;
+  background-color: $text-light;
+  @extend .w-100;
+  @extend .flex;
+  @extend .flex-column;
+}
+
+.nav-collapse {
+  max-height: 0px;
+  overflow-y: hidden;
+}
+
+.nav-collapse__menu {
+  @extend .flex-column;
+  padding: 0rem 48px;
+}
+.nav-menu__item {
+  padding: 0 24rem;
+  line-height: 48px;
+  font-size: 18px;
+}
+.nav-toggle__btn {
+  font-size: 32px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px;
+  @extend .text-dark;
+}
+.nav-links__list__btn {
+  display: none;
+}
+.active {
+  max-height: 50vh;
 }

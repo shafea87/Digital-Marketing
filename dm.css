@@ -1,6 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-.container-fluid h1 {
-  color: #1a3260;
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 24px;
+  background-color: #f6f6f6;
+}
+
+.nav-collapse {
+  max-height: 0px;
+  overflow-y: hidden;
+}
+
+.nav-collapse__menu {
+  padding: 0rem 48px;
+}
+
+.nav-menu__item {
+  padding: 0 24rem;
+  line-height: 48px;
+  font-size: 18px;
+}
+
+.nav-toggle__btn {
+  font-size: 32px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 16px;
+}
+
+.nav-links__list__btn {
+  display: none;
+}
+
+.active {
+  max-height: 50vh;
 }
 
 * {
@@ -18,7 +53,7 @@ ul {
   list-style-type: none;
 }
 
-.font-family {
+.font-poppins {
   font-family: "Poppins";
 }
 
@@ -34,7 +69,7 @@ ul {
   color: #f6f6f6;
 }
 
-.text-dark {
+.text-dark, .nav-toggle__btn {
   color: #1a3260;
 }
 
@@ -122,12 +157,12 @@ ul {
 
 .btn {
   border: none;
-  color: transparent;
+  background-color: transparent;
   cursor: pointer;
 }
 
 .btn-primary {
-  padding: 8rem 2rem;
+  padding: 0.8rem 2rem;
   border-radius: 50px;
   font-family: "Poppins";
 }
@@ -138,11 +173,11 @@ ul {
 }
 
 .btn-shadow {
-  -webkit-box-shadow: 0 0 50px 0rgb 0 0 0/10%;
-          box-shadow: 0 0 50px 0rgb 0 0 0/10%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.flex {
+.flex, #nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +190,7 @@ ul {
           flex-direction: row;
 }
 
-.flex-column {
+.flex-column, #nav, .nav-collapse__menu {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -203,7 +238,7 @@ ul {
       grid-template-columns: repeat(1, minmax(0 1fr));
 }
 
-.w-100 {
+.w-100, #nav {
   width: 100%;
 }
 
