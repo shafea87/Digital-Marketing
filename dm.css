@@ -211,6 +211,12 @@ ul {
   font-size: 3em;
 }
 
+@media (min-width: 768px) {
+  .sm-text-xl {
+    font-size: 48px;
+  }
+}
+
 .text-2xl {
   font-size: 5em;
 }
@@ -306,7 +312,7 @@ ul {
       grid-template-columns: repeat(1, minmax(0 1fr));
 }
 
-.w-100, #nav {
+.w-100, #nav, .banner-area {
   width: 100%;
 }
 
@@ -380,5 +386,17 @@ ul {
   background: url("../assets/bgimg1.png");
   -o-object-fit: fill;
      object-fit: fill;
+}
+
+.banner-area {
+  position: relative;
+  background: url("../assets/bgimg1.png") no-repeat;
+  background-position-x: right;
+  z-index: -99;
+}
+
+.banner-area__container {
+  height: 95vh;
+  padding-top: 256px;
 }
 /*# sourceMappingURL=dm.css.map */

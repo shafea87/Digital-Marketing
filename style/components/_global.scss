@@ -81,6 +81,11 @@ ul {
 .text-xl {
   font-size: 3em;
 }
+.sm-text-xl {
+  @include media-from($sm) {
+    font-size: 48px;
+  }
+}
 .text-2xl {
   font-size: 5em;
 }
