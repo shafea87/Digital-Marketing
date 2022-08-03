@@ -151,6 +151,19 @@ ul {
 }
 .container {
   width: 100%;
+
+  @include media-from($sm) {
+    max-width: $sm;
+  }
+  @include media-from($md) {
+    max-width: $md;
+  }
+  @include media-from($lg) {
+    max-width: $lg;
+  }
+  @include media-from($xl) {
+    max-width: $xl;
+  }
 }
 .container-fluid {
   width: 98%;
