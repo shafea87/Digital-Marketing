@@ -221,6 +221,12 @@ ul {
   font-size: 5em;
 }
 
+@media (min-width: 992px) {
+  .md-text-left {
+    text-align: left;
+  }
+}
+
 .font-bold {
   font-weight: bold;
 }
@@ -308,11 +314,11 @@ ul {
 }
 
 .cols {
-  -ms-grid-columns: (minmax(0 1fr))[1];
-      grid-template-columns: repeat(1, minmax(0 1fr));
+  -ms-grid-columns: (minmax(0, 1fr))[1];
+      grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.w-100, #nav, .banner-area {
+.w-100, #nav, .banner {
   width: 100%;
 }
 
@@ -382,21 +388,92 @@ ul {
   padding-right: 3.5rem;
 }
 
+@media (min-width: 992px) {
+  .lg-cols-3 {
+    -ms-grid-columns: (minmax(0, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.lg-cols-2 {
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .bg-cover {
   background: url("../assets/bgimg1.png");
   -o-object-fit: fill;
      object-fit: fill;
 }
 
-.banner-area {
+.banner {
   position: relative;
   background: url("../assets/bgimg1.png") no-repeat;
   background-position-x: right;
   z-index: -99;
 }
 
-.banner-area__container {
+.banner__container {
   height: 95vh;
   padding-top: 256px;
+}
+
+.agency {
+  padding: 80px 0;
+}
+
+.life__container {
+  -webkit-column-gap: 160px;
+          column-gap: 160px;
+}
+
+.life__container__images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10px, 1fr))[16];
+      grid-template-columns: repeat(16, minmax(10px, 1fr));
+  -ms-grid-rows: (minmax(100px, 1fr))[8];
+      grid-template-rows: repeat(8, minmax(100px, 1fr));
+}
+
+.life__images__first {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 8;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 5;
+  background: url("../assets/img1.png") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.life__images__second {
+  -ms-grid-column: 9;
+      grid-column-start: 9;
+  grid-column-end: 16;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  background: url("../assets/img2.png") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.life__images__third {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 10;
+  grid-area: 3 / 4 / 8 / 14;
+  background: url("../assets/img3.png") no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  z-index: 99;
+  background-position: 50%;
 }
 /*# sourceMappingURL=dm.css.map */

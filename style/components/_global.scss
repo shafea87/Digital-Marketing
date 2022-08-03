@@ -89,6 +89,11 @@ ul {
 .text-2xl {
   font-size: 5em;
 }
+.md-text-left {
+  @include media-from($md) {
+    text-align: left;
+  }
+}
 .font-bold {
   font-weight: bold;
 }
@@ -145,7 +150,7 @@ ul {
   display: grid;
 }
 .cols {
-  grid-template-columns: repeat(1, minmax(0 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 // Spacing classes
 .w-100 {
@@ -196,6 +201,14 @@ ul {
 .px-10 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+}
+.lg-cols-3 {
+  @include media-from($md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.lg-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 // images classes
 .bg-cover {

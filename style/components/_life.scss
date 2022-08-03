@@ -1,0 +1,36 @@
+.life__container {
+  column-gap: 160px;
+}
+.life__container__images {
+  display: grid;
+  grid-template-columns: repeat(16, minmax(10px, 1fr));
+  grid-template-rows: repeat(8, minmax(100px, 1fr));
+}
+.life__images__first {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background: $bg-image1 no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  filter: blur(1px);
+}
+.life__images__second {
+  grid-column-start: 9;
+  grid-column-end: 16;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background: $bg-image2 no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  filter: blur(1px);
+}
+.life__images__third {
+  grid-area: 3 / 4 / 8 / 14;
+  background: $bg-image3 no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  z-index: 99;
+  background-position: 50%;
+}

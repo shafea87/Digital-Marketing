@@ -1,11 +1,11 @@
-.banner-area {
+.banner {
   @extend .w-100;
   position: relative;
   background: $bg-cover no-repeat;
   background-position-x: right;
   z-index: -99;
 }
-.banner-area__container {
+.banner__container {
   height: 95vh;
   padding-top: 256px;
 }
