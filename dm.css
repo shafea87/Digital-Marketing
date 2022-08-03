@@ -18,6 +18,10 @@ ul {
   list-style-type: none;
 }
 
+.font-family {
+  font-family: "Poppins";
+}
+
 .text-gray {
   color: #808291;
 }
