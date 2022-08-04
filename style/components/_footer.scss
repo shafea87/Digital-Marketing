@@ -1,0 +1,31 @@
+#footer {
+  border-top: 2px solid $text-light;
+  margin-top: 125px;
+}
+.footer__container {
+  column-gap: 48px;
+  padding: 76px 0;
+  border-bottom: 2px solid $text-light;
+}
+.subscribe-text {
+  border: none;
+  background-color: $text-light;
+  padding: 16px;
+  font-size: 16px;
+  color: $text-dark;
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+.btn-go {
+  background-color: $text-light;
+  padding: 0 32px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: $text-dark2;
+    color: $text-white;
+  }
+}

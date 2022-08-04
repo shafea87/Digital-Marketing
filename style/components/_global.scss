@@ -213,6 +213,22 @@ ul {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
 }
+.sm-px-10 {
+  @include media-from($sm) {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+}
+.md-cols-2 {
+  @include media-until($sm) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.lg-cols-4 {
+  @include media-from($md) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
 .lg-cols-3 {
   @include media-from($md) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
