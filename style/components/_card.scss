@@ -1,0 +1,9 @@
+.card {
+  .grid {
+    column-gap: 64px;
+    row-gap: 32px;
+  }
+  .card-item {
+    box-shadow: $box-shadow;
+  }
+}
