@@ -15,6 +15,11 @@
     />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./dm.css" />
+    <!-- Animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <!-- Start Header -->
@@ -62,17 +67,26 @@
       <section class="banner font-poppins">
         <div class="container mx-auto banner-title banner__container">
           <div class="banner__title">
-            <span class="d-inline btn btn-primary bg-gradient-peach text-red"
+            <span
+              class="animate__animated animate__fadeInUp d-inline btn btn-primary bg-gradient-peach text-red"
               >digital experience</span
             >
             <div
               class="banner__title__branding py-2 branding text-dark text-lg sm-text-xl font-bold"
             >
-              <span class="d-block">Branding, Digital</span>
-              <span class="d-block">Marketing and</span>
-              <span class="d-block">Business solution</span>
+              <span
+                class="d-block animate__animated animate__fadeInDown animate__faster"
+                >Branding, Digital</span
+              >
+              <span
+                class="d-block animate__animated animate__fadeInDown animate__fast"
+                >Marketing and</span
+              >
+              <span class="d-block animate__animated animate__fadeInDown"
+                >Business solution</span
+              >
             </div>
-            <div class="py-5">
+            <div class="py-5 animate__animated animate__fadeInUp">
               <p class="text-gray">
                 We marge imagination and technology to help thousands of
               </p>
@@ -80,7 +94,7 @@
                 brands grow in an age of digital transformation
               </p>
             </div>
-            <div class="py-5">
+            <div class="py-5 animate__animated animate__fadeInUp">
               <a
                 href="#"
                 class="btn btn-primary bg-gradient text-white btn-shadow"
@@ -157,9 +171,12 @@
           class="grid life__container cols-1 lg-cols-2 text-center md-text-left"
         >
           <div class="grid-images life__container__images">
-            <div class="life__images__first"></div>
-            <div class="life__images__second"></div>
-            <div class="life__images__third"></div>
+            <div class="life__images__first rellax" data-rellax-speed="2"></div>
+            <div
+              class="life__images__second rellax"
+              data-rellax-speed="-1"
+            ></div>
+            <div class="life__images__third rellax" data-rellax-speed="1"></div>
           </div>
           <div class="py-10">
             <span class="d-inline btn btn-primary bg-gradient-peach text-red"
@@ -256,7 +273,7 @@
       <!-- Start card -->
       <section class="container mx-auto card py-10">
         <div class="grid cols-1 lg-cols-3 font-poppins">
-          <div class="card-item bg-gradient-peach">
+          <div class="card-item bg-gradient-peach rellax" data-rellax-speed="2">
             <div class="px-10 py-10">
               <span class="d-block text-red text-xl">
                 <i class="bi bi-app-indicator"></i>
@@ -271,7 +288,7 @@
             </div>
           </div>
 
-          <div class="card-item bg-gradient-blue">
+          <div class="card-item bg-gradient-blue rellax" data-rellax-speed="-1">
             <div class="px-10 py-10">
               <span class="d-block text-red text-xl">
                 <i class="bi bi-lightbulb"></i>
@@ -286,7 +303,7 @@
             </div>
           </div>
 
-          <div class="card-item bg-gradient-red">
+          <div class="card-item bg-gradient-red rellax" data-rellax-speed="2">
             <div class="px-10 py-10">
               <span class="d-block text-red text-xl">
                 <i class="bi bi-phone"></i>
@@ -301,7 +318,10 @@
             </div>
           </div>
 
-          <div class="card-item bg-gradient-yellow">
+          <div
+            class="card-item bg-gradient-yellow rellax"
+            data-rellax-speed="2"
+          >
             <div class="px-10 py-10">
               <span class="d-block text-red text-xl">
                 <i class="bi bi-apple"></i>
@@ -316,7 +336,10 @@
             </div>
           </div>
 
-          <div class="card-item bg-gradient-purple">
+          <div
+            class="card-item bg-gradient-purple rellax"
+            data-rellax-speed="1"
+          >
             <div class="px-10 py-10">
               <span class="d-block text-red text-xl">
                 <i class="bi bi-chevron-bar-expand"></i>
@@ -331,7 +354,10 @@
             </div>
           </div>
 
-          <div class="card-item bg-gradient-yellow">
+          <div
+            class="card-item bg-gradient-yellow rellax"
+            data-rellax-speed="2"
+          >
             <div class="px-10 py-10">
               <span class="d-block text-red text-xl">
                 <i class="bi bi-building"></i>
@@ -356,7 +382,7 @@
           <h1 class="text-lg text-dark">Articles daily updated</h1>
         </div>
         <div class="article__grid grid cols-1 lg-cols-3 font-poppins py-10">
-          <div class="article__card">
+          <div class="article__card animate__animated animate__fadeInLeft">
             <article class="btn-shadow">
               <img src="./assets/articles/img1.png" alt="" class="w-100" />
               <div class="py-5 px-5">
@@ -370,7 +396,7 @@
             </article>
           </div>
 
-          <div class="article__card">
+          <div class="article__card animate__animated animate__fadeInLeft">
             <article class="btn-shadow">
               <img src="./assets/articles/img2.png" alt="" class="w-100" />
               <div class="py-5 px-5">
@@ -384,7 +410,7 @@
             </article>
           </div>
 
-          <div class="article__card">
+          <div class="article__card animate__animated animate__fadeInLeft">
             <article class="btn-shadow">
               <img src="./assets/articles/img3.png" alt="" class="w-100" />
               <div class="py-5 px-5">
@@ -402,7 +428,9 @@
       <!-- End article -->
 
       <!-- Start ready -->
-      <section class="ready container mx-auto py-5">
+      <section
+        class="ready container mx-auto py-5 animate__animated animate__zoomIn"
+      >
         <div
           class="flex ready__container flex-wrap font-poppins btn-shadow py-10 sm-px-10"
         >
@@ -512,7 +540,12 @@
       </section>
     </footer>
     <!-- Scripts -->
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+      integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./main.js"></script>
   </body>
 </html>

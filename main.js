@@ -7,3 +7,8 @@ window.onload = function digital_fn() {
     collapse.classList.toggle('active');
   });
 };
+
+// rellax js code
+let rellax = new Rellax('.rellax', {
+  center: true,
+});
